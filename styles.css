@@ -5,6 +5,8 @@ body {
 }
 
 #menubar {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,4 +70,20 @@ h1 {
   color: #FFFFFF; /* White text color */
   text-align: center; /* Center align the text */
   margin-top: 20px; /* Add spacing from the top if desired */
+}
+
+#cpu-image-homepage {
+  width: 90%; /* Adjust the width as needed to make it smaller */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#parallax-container {
+  background-image: url("images/background-image.jpg"); /* Set your background image here */
+  background-size: cover;
+  height: 500px; /* Adjust the height as needed */
+  overflow: hidden;
 }

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Home | CPU Corner</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+    <!-- Menubar-->
    <div id="menubar">
-      <div id="logo"><a href="index.html">Techie</a></div>
+      <div id="logo"><a href="index.html">CPU Corner</a></div>
       <ul class="menuList">
          <li><a href="index.html">Home</a></li>
          <li><a href="timeline.html">Timeline</a></li>
@@ -15,9 +18,48 @@
          <li><a href="gallery.html">Gallery</a></li>
       </ul>
    </div>
+   
+   <div id="homepage-content">
+    <h1>Welcome to the World of CPUs</h1>
 
-   <h1>Welcome to the World of CPU's</h1>
+    <section class="overview">
+       <p>Central Processing Units (CPUs) are the brains of computers. They execute instructions and perform calculations, making them a crucial component of any device.</p>
+       <p>Explore the latest CPU models, their performance, and the history of CPU technology.</p>
+    </section>
 
+    <!-- CPU Picture -->
+    <div id="parallax-container">
+    <img src="cpu.jpg" alt="CPU Image" id="cpu-image-homepage">
+    </div>
+
+
+    <section class="current-models">
+       <h2>Current CPU Models</h2>
+       <p>Discover the cutting-edge CPU models that power today's technology. Stay up-to-date with the latest releases and performance benchmarks.</p>
+       <p>Discover the cutting-edge CPU models that power today's technology. Stay up-to-date with the latest releases and performance benchmarks.</p>
+
+       <p>Discover the cutting-edge CPU models that power today's technology. Stay up-to-date with the latest releases and performance benchmarks.</p>
+       <p>Discover the cutting-edge CPU models that power today's technology. Stay up-to-date with the latest releases and performance benchmarks.</p>
+       <p>Discover the cutting-edge CPU models that power today's technology. Stay up-to-date with the latest releases and performance benchmarks.</p>
+       <p>Discover the cutting-edge CPU models that power today's technology. Stay up-to-date with the latest releases and performance benchmarks.</p>
+       <p>Discover the cutting-edge CPU models that power today's technology. Stay up-to-date with the latest releases and performance benchmarks.</p>
+    
+    </section>
+
+
+ </div>
+
+  <!-- Parallax Script -->
+ <script>
+    window.addEventListener("scroll", function() {
+       let parallaxContainer = document.getElementById("parallax-container");
+       let scrollPosition = window.pageYOffset;
+
+       parallaxContainer.style.backgroundImage = 'url("images/cpu.jpg")';
+       parallaxContainer.style.backgroundSize = 'cover';
+       parallaxContainer.style.height = 600 - scrollPosition * 0.5 + 'px';
+    });
+ </script>
 
 </body>
 </html>
