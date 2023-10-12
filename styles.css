@@ -35,6 +35,10 @@ body {
   cursor: pointer;
 }
 
+ul.menuList .dropdown:not(:hover) #dropdown-models:not(:hover) {
+  display: none;
+}
+
 ul.menuList {
   text-transform: uppercase;
   text-align: center; 
@@ -63,14 +67,78 @@ ul.menuList li:hover {
   color: #FFFFFF;
 }
 
+
+ul.menuList .dropdown-models {
+  display: none;
+  position: absolute;
+  top: 100%; /* Adjust this value to control how much lower the dropdown appears */
+  background: #222222;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  text-align: left;
+  z-index: 1;
+  left: 0; /* Added to align the dropdown properly */
+}
+
+/* This creates a transparent overlay when hovering over the dropdown */
+.dropdown:hover::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px); /* Adjust the blur radius as needed */
+  z-index: -1; /* Position it behind the menu */
+}
+
+/* Show the dropdown when hovering over the parent menu item */
+.dropdown:hover .dropdown-models {
+  display: block;
+}
+
+ul.menuList .dropdown-models li {
+  padding: 10px;
+  margin: 0;
+}
+
+/* Adjust the hover styles as needed */
+.dropdown-models li:hover {
+  background: #d64b46;
+}
+
 h1 {
   font-family: 'Orbitron', sans-serif; /* Choose a font you like */
-  font-size: 36px; /* Adjust the font size as needed */
+  font-size: 36x; /* Adjust the font size as needed */
   font-weight: bold;
   color: #FFFFFF; /* White text color */
   text-align: center; /* Center align the text */
-  margin-top: 20px; /* Add spacing from the top if desired */
+  margin-top: 10%; /* Add spacing from the top if desired */
 }
+
+.cpu-month h2 {
+  font-family: 'Orbitron', sans-serif; /* Choose a font you like */
+  font-size: 36x; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #FFFFFF; /* White text color */
+  text-align: left; /* Center align the text */
+  padding-left: 5%;
+  padding-top: 10%;
+  
+}
+
+.overview {
+  font-family: 'Arial', sans-serif; /* Choose a readable font for content */
+  font-size: 18px; /* Adjust the font size for readability */
+  line-height: 1.5; /* Line spacing for easier reading */
+  text-align: justify; /* Justify text for a clean look */
+  color: #FFFFFF; /* White text color */
+  padding: 20px; /* Add padding for spacing */
+}
+
 
 #cpu-image-homepage {
   width: 90%; /* Adjust the width as needed to make it smaller */
@@ -86,4 +154,64 @@ h1 {
   background-size: cover;
   height: 500px; /* Adjust the height as needed */
   overflow: hidden;
+}
+
+.cpu-info {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #FFFFFF;
+  padding: 5%;
+  width: 50%;
+  float: left;
+  margin-top: -5%;
+}
+
+.cpu-image {
+  width: 30%;
+  float: right;
+  padding: 0 5%;
+  margin-top: -5%;
+}
+
+.cpu-image img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cpu-specs {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #FFFFFF;
+  padding: 5%;
+  width: 90%;
+  float: left;
+  margin-top: -8%;
+}
+
+.cpu-specs h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #FFFFFF; /* Border around the table */
+}
+
+td {
+
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #FFFFFF; /* White line between rows */
+  color: #FFFFFF; /* Text color for table cells */
+}
+
+td:nth-child(odd) {
+  border-right: 1px solid #FFFFFF; /* White line in the center for odd-numbered cells */
 }
