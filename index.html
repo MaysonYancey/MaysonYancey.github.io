@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Home | CPU Corner</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -30,10 +31,9 @@
       </ul>
    </div>
    
-   <div id="homepage-content">
+   <div>
       <h1>Welcome to the World of CPUs</h1>
-
-
+      
       <section class="overview">
          <p>Central Processing Units (CPUs) are the heart and soul of every computer. These tiny yet powerful components serve as the brain of your device, executing millions of instructions per second and performing complex calculations with remarkable speed and precision.</p>
          
@@ -136,27 +136,28 @@
             </tr>
         </table>
      </div>
-
-    
-    
-    
-    
-    
       </section>
 
- </div>
+      <section class="join-conversation">
+        <div>
+        <h2>Join the Conversation</h2>
+        <p>Discuss the latest CPU trends, share your insights, and connect with fellow enthusiasts in our forums.</p>
+        <a href="forums.html" class="join-button">Join the Conversation</a>
+    </div>
+    </section>
+    <div class="clear"></div>
+    <section>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 CPU Corner</p>
+                <p>Contact: info@cpucorner.com</p>
+                <p>1 Infinite Poop, Silicon Valley</p>
+            </div>
+        </footer>
+    </section>
 
-  <!-- Parallax Script -->
- <script>
-    window.addEventListener("scroll", function() {
-       let parallaxContainer = document.getElementById("parallax-container");
-       let scrollPosition = window.pageYOffset;
+ 
 
-       parallaxContainer.style.backgroundImage = 'url("images/cpu.jpg")';
-       parallaxContainer.style.backgroundSize = 'cover';
-       parallaxContainer.style.height = 1000 - scrollPosition * 1 + 'px';
-    });
- </script>
 
 </body>
 </html>

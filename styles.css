@@ -127,6 +127,7 @@ h1 {
   text-align: left; /* Center align the text */
   padding-left: 5%;
   padding-top: 10%;
+
   
 }
 
@@ -136,7 +137,7 @@ h1 {
   line-height: 1.5; /* Line spacing for easier reading */
   text-align: justify; /* Justify text for a clean look */
   color: #FFFFFF; /* White text color */
-  padding: 20px; /* Add padding for spacing */
+  padding: 5%; /* Add padding for spacing */
 }
 
 
@@ -147,13 +148,6 @@ h1 {
   margin: 0 auto; /* Center the image horizontally */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-}
-
-#parallax-container {
-  background-image: url("images/background-image.jpg"); /* Set your background image here */
-  background-size: cover;
-  height: 500px; /* Adjust the height as needed */
-  overflow: hidden;
 }
 
 .cpu-info {
@@ -172,7 +166,7 @@ h1 {
   width: 30%;
   float: right;
   padding: 0 5%;
-  margin-top: -5%;
+
 }
 
 .cpu-image img {
@@ -214,4 +208,96 @@ td {
 
 td:nth-child(odd) {
   border-right: 1px solid #FFFFFF; /* White line in the center for odd-numbered cells */
+}
+
+.join-conversation {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 25%;
+  width: 50%;
+  float: left;
+}
+
+
+.join-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d64b46; /* Button background color */
+  color: #FFFFFF; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px; /* Button border radius */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #FFFFFF; /* Change the background color on hover */
+  color: #d64b46; /* Change the text color on hover */
+}
+
+.clear {
+  clear: both; /* or clear: left; to clear only left-floated elements */
+}
+
+footer {
+  background: #222222;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.forum-post {
+  margin: 10px; /* Adjust margin as needed */
+  padding: 10px;
+}
+
+.subject {
+  font-size: 14px; /* Adjust the font size for the subject */
+  color: #ffffff; /* Text color for the subject */
+  margin-left: 5%;
+}
+
+.post-title {
+  font-size: 18px; /* Adjust the font size for the post title */
+  color: #ffffff; /* Text color for the post title */
+  margin: 10px 0; /* Add space between subject and title */
+  margin-left: 5%;
+}
+
+.post-actions {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+.like-button,
+.comment-button,
+.share-button {
+  margin-right: 1%;
+  padding: 5px 10px; /* Adjust button padding */
+  background-color: #d64b46; /* Button background color */
+  color: #fff; /* Text color for buttons */
+  border: none;
+  cursor: pointer;
+  border-radius: 7%;
+}
+
+.like-button:hover,
+.comment-button:hover,
+.share-button:hover {
+    background-color: #fff; /* Change the background color on hover */
+    color: #d64b46; /* Change the text color on hover */
+}
+
+.post-divider {
+  
+  border: 1px solid #ddd; /* Horizontal line between posts */
+  margin-left: 6%; /* Adjust spacing between posts */
+  margin-top: 3%;
+  width: 50%;
 }
