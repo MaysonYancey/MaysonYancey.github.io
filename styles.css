@@ -68,7 +68,7 @@ ul.menuList li:hover {
 }
 
 
-ul.menuList .dropdown-models {
+.dropdown-models {
   display: none;
   position: absolute;
   top: 100%; /* Adjust this value to control how much lower the dropdown appears */
@@ -80,11 +80,10 @@ ul.menuList .dropdown-models {
   width: 200px;
   text-align: left;
   z-index: 1;
-  left: 0; /* Added to align the dropdown properly */
 }
 
-/* This creates a transparent overlay when hovering over the dropdown */
-.dropdown:hover::before {
+/* Create a transparent overlay when hovering over the dropdown */
+.dropdown::before {
   content: "";
   position: fixed;
   top: 0;
@@ -93,7 +92,16 @@ ul.menuList .dropdown-models {
   height: 100%;
   backdrop-filter: blur(4px); /* Adjust the blur radius as needed */
   z-index: -1; /* Position it behind the menu */
+  opacity: 0; /* Start with 0 opacity, making it invisible */
+  pointer-events: none; /* Prevent the overlay from capturing events */
+  transition: opacity 0.2s; /* Add a smooth transition for opacity */
 }
+
+/* Show the overlay when hovering over the parent menu item */
+.dropdown:hover::before {
+  opacity: 1; /* Make the overlay visible */
+}
+
 
 /* Show the dropdown when hovering over the parent menu item */
 .dropdown:hover .dropdown-models {
@@ -108,6 +116,7 @@ ul.menuList .dropdown-models li {
 /* Adjust the hover styles as needed */
 .dropdown-models li:hover {
   background: #d64b46;
+  width:90%;
 }
 
 h1 {
