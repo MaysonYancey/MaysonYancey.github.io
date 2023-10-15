@@ -106,6 +106,7 @@ ul.menuList li:hover {
 /* Show the dropdown when hovering over the parent menu item */
 .dropdown:hover .dropdown-models {
   display: block;
+  margin-left: -10%;
 }
 
 ul.menuList .dropdown-models li {
@@ -276,6 +277,7 @@ footer {
   color: #ffffff; /* Text color for the post title */
   margin: 10px 0; /* Add space between subject and title */
   margin-left: 5%;
+  max-width: 50%;
 }
 
 .post-actions {
@@ -309,4 +311,39 @@ footer {
   margin-left: 6%; /* Adjust spacing between posts */
   margin-top: 3%;
   width: 50%;
+}
+
+.models-container {
+  display: flex;
+  margin: 20px;
+  background-color: #222222;
+  border-radius: 10px;
+}
+
+.model-summary {
+  flex:1;
+  padding:20px;
+  font-size: 120%;
+}
+
+.model-summary h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.model-summary a {
+  color: #FFFFFF;
+}
+
+
+.model-image {
+  width: 30%;
+  float: right;
+  padding: 0 5%;
+
+}
+
+.model-image img {
+  max-width: 100%;
+  height: auto;
 }
