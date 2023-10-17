@@ -71,7 +71,7 @@ ul.menuList li:hover {
 .dropdown-models {
   display: none;
   position: absolute;
-  top: 100%; /* Adjust this value to control how much lower the dropdown appears */
+  top: 100%; 
   background: #222222;
   border-radius: 10px;
   list-style: none;
@@ -82,7 +82,7 @@ ul.menuList li:hover {
   z-index: 1;
 }
 
-/* Create a transparent overlay when hovering over the dropdown */
+
 .dropdown::before {
   content: "";
   position: fixed;
@@ -90,20 +90,20 @@ ul.menuList li:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(4px); /* Adjust the blur radius as needed */
-  z-index: -1; /* Position it behind the menu */
-  opacity: 0; /* Start with 0 opacity, making it invisible */
-  pointer-events: none; /* Prevent the overlay from capturing events */
-  transition: opacity 0.2s; /* Add a smooth transition for opacity */
+  backdrop-filter: blur(4px); 
+  z-index: -1; 
+  opacity: 0; 
+  pointer-events: none; 
+  transition: opacity 0.2s; 
 }
 
-/* Show the overlay when hovering over the parent menu item */
+
 .dropdown:hover::before {
-  opacity: 1; /* Make the overlay visible */
+  opacity: 1; 
 }
 
 
-/* Show the dropdown when hovering over the parent menu item */
+
 .dropdown:hover .dropdown-models {
   display: block;
   margin-left: -10%;
@@ -114,27 +114,27 @@ ul.menuList .dropdown-models li {
   margin: 0;
 }
 
-/* Adjust the hover styles as needed */
+
 .dropdown-models li:hover {
   background: #d64b46;
   width:90%;
 }
 
 h1 {
-  font-family: 'Orbitron', sans-serif; /* Choose a font you like */
-  font-size: 36x; /* Adjust the font size as needed */
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 36x; 
   font-weight: bold;
-  color: #FFFFFF; /* White text color */
-  text-align: center; /* Center align the text */
-  margin-top: 10%; /* Add spacing from the top if desired */
+  color: #FFFFFF; 
+  text-align: center;
+  margin-top: 10%; 
 }
 
 .cpu-month h2 {
-  font-family: 'Orbitron', sans-serif; /* Choose a font you like */
-  font-size: 36x; /* Adjust the font size as needed */
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 36x; 
   font-weight: bold;
-  color: #FFFFFF; /* White text color */
-  text-align: left; /* Center align the text */
+  color: #FFFFFF;
+  text-align: left; 
   padding-left: 5%;
   padding-top: 10%;
 
@@ -142,20 +142,20 @@ h1 {
 }
 
 .overview {
-  font-family: 'Arial', sans-serif; /* Choose a readable font for content */
-  font-size: 18px; /* Adjust the font size for readability */
-  line-height: 1.5; /* Line spacing for easier reading */
-  text-align: justify; /* Justify text for a clean look */
-  color: #FFFFFF; /* White text color */
-  padding: 5%; /* Add padding for spacing */
+  font-family: 'Arial', sans-serif; 
+  font-size: 18px; 
+  line-height: 1.5; 
+  text-align: justify; 
+  color: #FFFFFF; 
+  padding: 5%; 
 }
 
 
 #cpu-image-homepage {
-  width: 90%; /* Adjust the width as needed to make it smaller */
+  width: 90%; 
   height: auto;
   display: block;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto; 
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
@@ -205,19 +205,19 @@ h1 {
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #FFFFFF; /* Border around the table */
+  border: 1px solid #FFFFFF; 
 }
 
 td {
 
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #FFFFFF; /* White line between rows */
-  color: #FFFFFF; /* Text color for table cells */
+  border-bottom: 1px solid #FFFFFF; 
+  color: #FFFFFF; 
 }
 
 td:nth-child(odd) {
-  border-right: 1px solid #FFFFFF; /* White line in the center for odd-numbered cells */
+  border-right: 1px solid #FFFFFF; 
 }
 
 .join-conversation {
@@ -235,21 +235,21 @@ td:nth-child(odd) {
 .join-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #d64b46; /* Button background color */
-  color: #FFFFFF; /* Button text color */
+  background-color: #d64b46; 
+  color: #FFFFFF; 
   text-decoration: none;
-  border-radius: 5px; /* Button border radius */
+  border-radius: 5px; 
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .join-button:hover {
-  background-color: #FFFFFF; /* Change the background color on hover */
-  color: #d64b46; /* Change the text color on hover */
+  background-color: #FFFFFF; 
+  color: #d64b46; 
 }
 
 .clear {
-  clear: both; /* or clear: left; to clear only left-floated elements */
+  clear: both; 
 }
 
 footer {
@@ -262,20 +262,20 @@ footer {
 }
 
 .forum-post {
-  margin: 10px; /* Adjust margin as needed */
+  margin: 10px; 
   padding: 10px;
 }
 
 .subject {
-  font-size: 14px; /* Adjust the font size for the subject */
-  color: #ffffff; /* Text color for the subject */
+  font-size: 14px; 
+  color: #ffffff; 
   margin-left: 5%;
 }
 
 .post-title {
-  font-size: 18px; /* Adjust the font size for the post title */
-  color: #ffffff; /* Text color for the post title */
-  margin: 10px 0; /* Add space between subject and title */
+  font-size: 18px; 
+  color: #ffffff; 
+  margin: 10px 0; 
   margin-left: 5%;
   max-width: 50%;
 }
@@ -290,9 +290,9 @@ footer {
 .comment-button,
 .share-button {
   margin-right: 1%;
-  padding: 5px 10px; /* Adjust button padding */
-  background-color: #d64b46; /* Button background color */
-  color: #fff; /* Text color for buttons */
+  padding: 5px 10px; 
+  background-color: #d64b46; 
+  color: #fff; 
   border: none;
   cursor: pointer;
   border-radius: 7%;
@@ -301,14 +301,14 @@ footer {
 .like-button:hover,
 .comment-button:hover,
 .share-button:hover {
-    background-color: #fff; /* Change the background color on hover */
-    color: #d64b46; /* Change the text color on hover */
+    background-color: #fff; 
+    color: #d64b46; 
 }
 
 .post-divider {
   
-  border: 1px solid #ddd; /* Horizontal line between posts */
-  margin-left: 6%; /* Adjust spacing between posts */
+  border: 1px solid #ddd; 
+  margin-left: 6%; 
   margin-top: 3%;
   width: 50%;
 }
