@@ -357,13 +357,19 @@ footer {
   height: auto;
 }
 
-/* CSS to set image size for images within the .gallery container */
-.gallery {
-  display: flex; /* Use flexbox to arrange images in a row */
+.gallery_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-.gallery img {
-  width: 200px;
-  height: auto; /* Maintain the aspect ratio of the original images */
-  padding: 5px;
+.img_gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img_gallery img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
