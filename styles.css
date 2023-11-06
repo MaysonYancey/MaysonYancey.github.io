@@ -5,6 +5,7 @@ body {
 }
 
 #menubar {
+  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -98,7 +99,7 @@ ul.menuList li:hover {
 
 
 .dropdown:hover::before {
-  opacity: 1; 
+  opacity: 1;
 }
 
 
@@ -124,7 +125,8 @@ h1 {
   font-size: 36x; 
   font-weight: bold;
   color: #FFFFFF; 
-  text-align: center;
+  text-align: center; 
+  margin-top: 5%; 
 }
 
 .cpu-month h2 {
@@ -183,7 +185,7 @@ h1 {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.cpu-specs {
+.table_format {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -200,22 +202,33 @@ h1 {
   font-weight: bold;
 }
 
+/* Apply basic styling to all tables */
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #FFFFFF; 
+  margin-bottom: 20px;
 }
 
-td {
-
-  padding: 10px;
+/* Style table headers */
+th {
+  background-color: #222222;
   text-align: left;
-  border-bottom: 1px solid #FFFFFF; 
-  color: #FFFFFF; 
+  padding: 8px;
 }
 
-td:nth-child(odd) {
-  border-right: 1px solid #FFFFFF; 
+/* Style table rows */
+tr:nth-child(even) {
+  background-color: transparent;
+}
+
+tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+/* Style table cells */
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
 }
 
 .join-conversation {
@@ -271,7 +284,7 @@ footer {
 }
 
 .post-title {
-  font-size: 18px; 
+  font-size: 18px;
   color: #ffffff; 
   margin: 10px 0; 
   margin-left: 5%;
@@ -307,8 +320,6 @@ footer {
   
   border: 1px solid #ddd; 
   margin-left: 6%; 
-  margin-top: 3%;
-  width: 50%;
 }
 
 .models-container {
@@ -338,9 +349,21 @@ footer {
   width: 30%;
   float: right;
   padding: 0 5%;
+
 }
 
 .model-image img {
   max-width: 100%;
   height: auto;
+}
+
+/* CSS to set image size for images within the .gallery container */
+.gallery {
+  display: flex; /* Use flexbox to arrange images in a row */
+}
+
+.gallery img {
+  width: 200px;
+  height: auto; /* Maintain the aspect ratio of the original images */
+  padding: 5px;
 }
