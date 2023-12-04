@@ -15,6 +15,7 @@ body {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 25px rgba(164, 129, 129, 0.15);
+  z-index: 1000;
 }
 
 .menuList a {
@@ -147,9 +148,17 @@ h1 {
   line-height: 1.5; 
   text-align: justify; 
   color: #FFFFFF; 
-  padding: 5%; 
+  padding: 10px; 
 }
 
+.overview_container {
+  padding: 2%;
+  background-color: #5a5858;
+  border-radius: 15px;
+  width: 80%; 
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 
 #cpu-image-homepage {
   width: 90%; 
@@ -207,6 +216,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 /* Style table headers */
@@ -270,6 +280,7 @@ footer {
   padding: 50px 0;
   width: 100%;
   margin-top: 10%;
+  z-index: 1000;
 }
 
 .forum-post {
@@ -374,6 +385,11 @@ footer {
   height: auto;
 }
 
+.timeline-container {
+  position: relative;
+}
+
+
 /* Timeline  */
 .timeline {
   position: relative;
@@ -381,6 +397,8 @@ footer {
   margin: 0 auto;
   padding: 1em;
   list-style-type: none;
+  z-index: 1;
+
 }
 
 .timeline:before {
@@ -392,6 +410,7 @@ footer {
   height: 100%;
   margin-left: -3px;
   background: rgb(145, 143, 143);
+  margin-top: 50px;
 }
 
 /* Distance in between li*/
@@ -441,7 +460,7 @@ footer {
   background: #fff;
   border-radius: 10px;
   border: 4px solid #d64b46;
-  z-index: 10;
+  z-index: 1;
 }
 
 .direction-r .flag:before {
@@ -498,3 +517,70 @@ footer {
   line-height: 1.5em;
 }
 
+.video_container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.video_container iframe {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .video_container {
+    grid-template-columns: 1fr; /* Change to a 1x1 layout on smaller screens */
+  }
+}
+
+.video_container_timeline {
+  width: 80%;
+  margin-left: 30%;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Left and Right Arrows */
+.arrow-container {
+  position: relative;
+  bottom: 10px;
+  z-index: 1000;
+}
+
+.arrow {
+  font-size: 40px;
+  color: #d64b46;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 1%;
+}
+
+.left-arrow {
+  float: left;
+}
+
+.right-arrow {
+  float: right;
+}
+
+.arrow-text {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-align: center;
+}
+
+.left-arrow-text {
+  float: left;
+  padding-left: 5px;
+}
+
+.right-arrow-text {
+  float: right;
+  padding-right: 5px;
+}
