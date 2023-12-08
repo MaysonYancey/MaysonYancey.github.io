@@ -541,7 +541,7 @@ footer {
 .video_container_timeline {
   width: 80%;
   margin-left: 30%;
-  margin-top: 10%;
+  margin-top: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
