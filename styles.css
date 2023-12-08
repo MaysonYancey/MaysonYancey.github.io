@@ -388,7 +388,7 @@ footer {
 .timeline-container {
   position: relative;
   transform: scale(1.3);
-  transform-origin: top center;
+  margin-top: 40%;
 }
 
 
@@ -534,7 +534,7 @@ footer {
 
 @media (max-width: 1000px) {
   .video_container {
-    grid-template-columns: 1fr; /* Change to a 1x1 layout on smaller screens */
+    grid-template-columns: 1fr; 
   }
 }
 
