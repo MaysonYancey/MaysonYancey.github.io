@@ -586,3 +586,19 @@ footer {
   float: right;
   padding-right: 5px;
 }
+
+.amazon-link-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.amazon-button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #ff9900; 
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
