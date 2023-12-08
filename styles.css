@@ -388,7 +388,8 @@ footer {
 .timeline-container {
   position: relative;
   transform: scale(1.2);
-  margin-top: 40%;
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 
@@ -536,14 +537,6 @@ footer {
   .video_container {
     grid-template-columns: 1fr; 
   }
-}
-
-.video_container_timeline {
-  width: 80%;
-  margin-left: 30%;
-  margin-top: 30%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Left and Right Arrows */
