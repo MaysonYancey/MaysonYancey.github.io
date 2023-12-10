@@ -283,6 +283,10 @@ footer {
   z-index: 1000;
 }
 
+.footer-content a {
+  color: #0088cc; 
+}
+
 .forum-post {
   margin: 10px; 
   padding: 10px;
@@ -594,4 +598,40 @@ footer {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0088cc;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #005580;
+}
+
+.form_title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
 }
